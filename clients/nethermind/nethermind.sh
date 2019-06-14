@@ -83,4 +83,4 @@ fi
 set -e
 
 echo "Running Nethermind..."
-dotnet Nethermind.Runner.dll --config /configs/test.cfg  2>&1 | tee /log.txt
+dotnet Nethermind.Runner.dll --log TRACE --config /configs/test.cfg  2>&1 | tee /log.txt
